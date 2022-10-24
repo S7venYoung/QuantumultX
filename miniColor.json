@@ -247,5 +247,15 @@
             "name": "Oracle",
             "url": "https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/Oracle.png"
         }
+        ,
+        {
+            "name": "V2ray",
+            "url": "https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/V2ray.png"
+        }
+        ,
+        {
+            "name": "wmsxwd",
+            "url": "https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/wmsxwd.png"
+        }
     ]
 }
