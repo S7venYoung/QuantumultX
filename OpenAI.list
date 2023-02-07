@@ -1,0 +1,5 @@
+# NAME: OpenAI
+HOST-SUFFIX,openai.com,OpenAI
+HOST-SUFFIX,auth0.com,OpenAI
+HOST-SUFFIX,sentry.io,OpenAI
+HOST-SUFFIX,sentry.io,OpenAI
