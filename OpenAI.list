@@ -1,5 +1,19 @@
 # NAME: OpenAI
-HOST-SUFFIX,openai.com,OpenAI
-HOST-SUFFIX,auth0.com,OpenAI
-HOST-SUFFIX,deepl.com,OpenAI
-HOST-SUFFIX,sentry.io,OpenAI
+HOST, cdn.auth0.com, OpenAI
+HOST, openaiapi-site.azureedge.net, OpenAI
+HOST-SUFFIX, ai.com, OpenAI
+HOST-SUFFIX, challenges.cloudflare.com, OpenAI
+HOST-SUFFIX, chat.openai.com.cdn.cloudflare.net, OpenAI
+HOST-SUFFIX, events.statsigapi.net, OpenAI
+HOST-SUFFIX, featuregates.org, OpenAI
+HOST-SUFFIX, identrust.com, OpenAI
+HOST-SUFFIX, openai.com, OpenAI
+HOST-SUFFIX, intercom.io, OpenAI
+HOST-SUFFIX, intercomcdn.com, OpenAI
+HOST-SUFFIX, openaiapi-site.azureedge.net, OpenAI
+HOST-SUFFIX, openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net, OpenAI
+HOST-SUFFIX, openaicom.imgix.net, OpenAI
+HOST-SUFFIX, openaicomproductionae4b.blob.core.windows.net, OpenAI
+HOST-SUFFIX, poe.com, OpenAI
+HOST-SUFFIX, stripe.com, OpenAI
+HOST-KEYWORD, openai, OpenAI
