@@ -248,6 +248,11 @@
         }
         ,
         {
+            "name": "EU",
+            "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/EU.png"
+        }
+        ,
+        {
             "name": "Oracle",
             "url": "https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/Oracle.png"
         }
