@@ -235,21 +235,21 @@
             "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/AU.png"
         },
         {
-            "name": "IN",
-            "url": "https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/IN.png"
-        },
-        {
             "name": "XD",
             "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png"
         },
         {
-            "name": "UN",
-            "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/UN.png"
-        }
-        ,
+            "name": "IN",
+            "url": "https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/IN.png"
+        },
         {
             "name": "EU",
             "url": "https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/EU.png"
+        }
+        ,
+        {
+            "name": "UN",
+            "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/UN.png"
         }
         ,
         {
