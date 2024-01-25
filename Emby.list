@@ -2,6 +2,7 @@
 IP-CIDR, 102.223.180.108/24, Emby
 HOST-SUFFIX, push-kr.misakaf.org, Emby
 HOST-SUFFIX, misakaf.org, Emby
+HOST-SUFFIX, aca.best, Emby
 HOST-SUFFIX, stream1.misakaf.org, Emby
 HOST-SUFFIX, stream2.misakaf.org, Emby
 HOST-SUFFIX, stream3.misakaf.org, Emby
