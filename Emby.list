@@ -1,5 +1,5 @@
 # NAME: Emby
-ip-cidr, 102.223.180.108/24, Emby
+IP-CIDR, 102.223.180.108/24, Emby
 HOST-SUFFIX, push-kr.misakaf.org, Emby
 HOST-SUFFIX, misakaf.org, Emby
 HOST-SUFFIX, stream1.misakaf.org, Emby
