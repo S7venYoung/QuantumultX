@@ -6,5 +6,6 @@ HOST-SUFFIX, aca.best, Emby
 HOST-SUFFIX, stream1.misakaf.org, Emby
 HOST-SUFFIX, stream2.misakaf.org, Emby
 HOST-SUFFIX, stream3.misakaf.org, Emby
+HOST-SUFFIX, stream4.misakaf.org, Emby
 HOST-KEYWORD, emby, Emby
 HOST-KEYWORD, misakaf, Emby
