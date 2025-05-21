@@ -6,7 +6,6 @@
 
 [Rewrite]
 
-# 将 imgur 图片请求重定向到镜像站，保留原始图片路径
 ^https?:\/\/i\.imgur\.com\/(.*) url 302 https://img.noobzone.ru/getimg.php?url=https://i.imgur.com/$1
 
 [MITM]
