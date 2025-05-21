@@ -1,18 +1,12 @@
-// Imgur 加速镜像 + 去除 Referer（兼容 Quantumult X & Loon）
+// imgur-mirror.js
+// Quantumult X: 将 imgur 图片请求重定向到 img.noobzone.ru
 
-let url = $request.url;
-let match = url.match(/^https?:\/\/i\.imgur\.com\/(.*\.(jpg|jpeg|png|gif))/);
-if (match) {
-  let imagePath = match[1];
-  let newURL = "https://img.noobzone.ru/getimg.php?url=https://i.imgur.com/" + imagePath;
+const originalUrl = $request.url;
+const redirectUrl = "https://img.noobzone.ru/getimg.php?url=" + encodeURIComponent(originalUrl);
 
-  $done({
-    url: newURL,
-    headers: {
-      ...$request.headers,
-      "Referer": ""
-    }
-  });
-} else {
-  $done({});
-}
+$done({
+  status: 302,
+  headers: {
+    Location: redirectUrl
+  }
+});
