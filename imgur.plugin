@@ -8,6 +8,10 @@
 
 hostname = i.imgur.com
 
+[Rewrite]
+
+^https?:\/\/i\.imgur\.com\/(.*) url 302 https://img.noobzone.ru/getimg.php?url=https://i.imgur.com/$1
+
 [Script]
 
 http-request ^https?:\/\/i\.imgur\.com\/(.*)\.(jpg|jpeg|png|gif)$ script-path=https://raw.githubusercontent.com/S7venYoung/QuantumultX/refs/heads/master/js/imgur-redirect.js, tag=Imgur 加速镜像
