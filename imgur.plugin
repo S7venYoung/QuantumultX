@@ -10,4 +10,4 @@ hostname = i.imgur.com
 
 [Script]
 
-http-request ^https?:\/\/i\.imgur\.com\/(.*)\.(jpg|jpeg|png|gif)$ script-path=https://example.com/imgur-redirect.js, tag=Imgur 加速镜像
+http-request ^https?:\/\/i\.imgur\.com\/(.*)\.(jpg|jpeg|png|gif)$ script-path=https://raw.githubusercontent.com/S7venYoung/QuantumultX/refs/heads/master/js/imgur-redirect.js, tag=Imgur 加速镜像
