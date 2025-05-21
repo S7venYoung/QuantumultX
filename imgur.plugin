@@ -4,9 +4,9 @@
 #!loon_version = 3.3.0(853)
 #!icon=https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/imgur.png
 
-[rewrite]
+[Script]
 
-^https?:\/\/i\.imgur\.com\/(.*) url 302 https://img.noobzone.ru/getimg.php?url=https://i.imgur.com/$1
+http-request ^https?:\/\/i\.imgur\.com\/.+\.(jpg|jpeg|png|gif|webp)$ script-path=https://raw.githubusercontent.com/yourusername/loon-script/main/imgur-mirror.js, requires-body=false, timeout=5, tag=Imgur镜像跳转
 
 [mitm]
 
