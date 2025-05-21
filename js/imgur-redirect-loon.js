@@ -1,13 +1,13 @@
-// imgur-redirect.js
-// Loon 插件：重定向 i.imgur.com 图片至 noobzone 镜像站
+// imgur-mirror.js
+// 将 imgur 图片跳转到镜像站
+// @author Seven
 
-let url = $request.url;
-let redirectUrl = "https://img.noobzone.ru/getimg.php?url=" + encodeURIComponent(url);
+const url = $request.url;
+const mirrorBase = "https://img.noobzone.ru/getimg.php?url=";
 
-$done({
-  status: 302,
-  headers: {
-    Location: redirectUrl,
-    'Cache-Control': 'no-cache'
-  }
-});
+if (url.includes("i.imgur.com")) {
+  const redirectUrl = mirrorBase + encodeURIComponent(url);
+  $done({ response: { status: 302, headers: { Location: redirectUrl } } });
+} else {
+  $done({});
+}
