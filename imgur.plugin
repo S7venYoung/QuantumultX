@@ -6,8 +6,8 @@
 
 [Script]
 
-http-request ^https?:\/\/i\.imgur\.com\/.+\.(jpg|jpeg|png|gif|webp)$ script-path=https://raw.githubusercontent.com/S7venYoung/QuantumultX/refs/heads/master/js/imgur-redirect-loon.js, requires-body=false, timeout=5, tag=Imgur镜像跳转
+http-request ^https?:\/\/(i\.)?imgur\.com\/.+\.(jpg|jpeg|png|gif|webp)$ script-path=https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/js/imgur-redirect-loon.js, requires-body=false, timeout=5, tag=Imgur镜像跳转
 
 [mitm]
 
-hostname = i.imgur.com
+hostname = i.imgur.com, imgur.com
