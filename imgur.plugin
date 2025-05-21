@@ -1,0 +1,13 @@
+#!name=Imgur图片助手
+#!author=@S7venYoung
+#!desc=解决imgur图片加载429问题
+#!loon_version = 3.3.0(853)
+#!icon=https://raw.githubusercontent.com/S7venYoung/QuantumultX/blob/master/imgur.png
+
+[MITM]
+
+hostname = i.imgur.com
+
+[Script]
+
+http-request ^https?:\/\/i\.imgur\.com\/(.*)\.(jpg|jpeg|png|gif)$ script-path=https://example.com/imgur-redirect.js, tag=Imgur 加速镜像
