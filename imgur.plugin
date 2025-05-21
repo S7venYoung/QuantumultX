@@ -4,7 +4,7 @@
 #!loon_version = 3.3.0(853)
 #!icon=https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/imgur.png
 
-[Rewrite]
+[Script]
 
 ^https?:\/\/i\.imgur\.com\/(.*) url 302 https://img.noobzone.ru/getimg.php?url=https://i.imgur.com/$1
 
