@@ -4,10 +4,10 @@
 #!loon_version = 3.3.0(853)
 #!icon=https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/imgur.png
 
-[Script]
+[rewrite]
 
 ^https?:\/\/i\.imgur\.com\/(.*) url 302 https://img.noobzone.ru/getimg.php?url=https://i.imgur.com/$1
 
-[MITM]
+[mitm]
 
 hostname = i.imgur.com
