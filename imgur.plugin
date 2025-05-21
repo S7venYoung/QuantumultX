@@ -8,6 +8,10 @@
 
 http-request ^https?:\/\/(i\.)?imgur\.com\/.+\.(jpg|jpeg|png|gif|webp)$ script-path=https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/js/imgur-redirect-loon.js, requires-body=false, timeout=5, tag=Imgur镜像跳转
 
+[Header Rewrite]
+# 删除 Referer 头防止被镜像站拦截
+img.noobzone.ru^ header-del Referer
+
 [mitm]
 
-hostname = i.imgur.com, imgur.com
+hostname = i.imgur.com, imgur.com, img.noobzone.ru
