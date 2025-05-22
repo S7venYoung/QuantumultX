@@ -1,19 +1,15 @@
-// imgur-redirect-loon.js
-// 自动将 imgur 图片请求跳转到镜像站
-// Author: @S7venYoung + ChatGPT
+// @name Imgur 图片跳转镜像 - Quantumult X
+// @author @S7venYoung
 
-const mirrorBase = "https://img.noobzone.ru/getimg.php?url=";
-const url = $request.url;
+let url = $request.url;
+let mirror = "https://img.noobzone.ru/getimg.php?url=";
 
-if (url.match(/^https?:\/\/(i\.)?imgur\.com\/.+\.(jpg|jpeg|png|gif|webp)$/i)) {
-  const redirectUrl = mirrorBase + encodeURIComponent(url);
+if (url.includes("imgur.com")) {
+  let newUrl = mirror + encodeURIComponent(url);
   $done({
-    response: {
-      status: 302,
-      headers: {
-        Location: redirectUrl,
-        "Cache-Control": "no-cache"
-      }
+    status: "HTTP/1.1 302 Found",
+    headers: {
+      "Location": newUrl
     }
   });
 } else {
