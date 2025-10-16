@@ -1,0 +1,23 @@
+#!name = 哔哩哔哩 — 空降助手
+#!desc = 单独的空降助手（跳过视频内插播广告）
+#!openUrl = https://apps.apple.com/app/id736536022
+#!author = RuCu6, kokoryh, Maasea, 可莉🅥
+#!tag = 去广告, 空降助手
+#!system = 
+#!system_version = 
+#!loon_version = 3.3.5(904)
+#!homepage = https://github.com/kokoryh/Sparkle
+#!icon = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/App-Icon/BilibiliPink.png
+#!date = 2025-10-16 00:00
+
+[Argument]
+airborne = switch, true, false, tag = [空降助手]跳过视频内插播广告, desc = true: 开启; false: 关闭;
+logLevel = select, "off", "error", "warn", "info", "debug", tag = 日志等级, desc = 选择日志输出等级
+
+[Script]
+# 空降助手 — 拦截并修改 DM 请求（视频内插播/空降相关），请求处理脚本使用 upstream 的 JS
+# 注意：requires-body = true 且 binary-body-mode = true（因为使用 ProtoBuf）
+http-request ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$ script-path = https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/bilibili.protobuf.request.js, requires-body = true, binary-body-mode = true, tag = [哔哩哔哩]空降助手, enable={airborne}, argument=[{logLevel}]
+
+[MitM]
+hostname = grpc.biliapi.net, app.bilibili.com
