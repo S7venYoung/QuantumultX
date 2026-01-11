@@ -266,5 +266,10 @@
             "name": "wmsxwd",
             "url": "https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/wmsxwd.png"
         }
+        ,
+        {
+            "name": "gemini",
+            "url": "https://raw.githubusercontent.com/S7venYoung/QuantumultX/master/Gemini.png"
+        }
     ]
 }
