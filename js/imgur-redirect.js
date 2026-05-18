@@ -1,15 +1,15 @@
-// @name Imgur 图片跳转镜像 - Quantumult X
-// @author @S7venYoung
+// Imgur image redirect for Quantumult X
+// Redirects Imgur image responses to the noobzone mirror.
 
-let url = $request.url;
-let mirror = "https://img.noobzone.ru/getimg.php?url=";
+const mirrorBase = "https://img.noobzone.ru/getimg.php?url=";
+const url = $request.url;
 
-if (url.includes("imgur.com")) {
-  let newUrl = mirror + encodeURIComponent(url);
+if (/^https?:\/\/(i\.)?imgur\.com\/.+\.(jpg|jpeg|png|gif|webp)(\?.*)?$/i.test(url)) {
   $done({
     status: "HTTP/1.1 302 Found",
     headers: {
-      "Location": newUrl
+      Location: mirrorBase + encodeURIComponent(url),
+      "Cache-Control": "no-cache"
     }
   });
 } else {
